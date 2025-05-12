@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qode | QR code generator</title>
+    <link rel="icon" href="https://iili.io/2Lx8wtp.md.png" />
+<link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="inputarea">
+            <label for="textinput">Enter Text or URL</label>
+            <input type="text" name="textinput" id="textinput" placeholder="Text or URL" />
+            <div id="error">
+                <h2>Input fields required*</h2>
+              </div>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=HelloWorld" alt="QR code" id="qrCode" />
+            <button type="submit" id="submit">Generate QR Code</button>
+          </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</html>
